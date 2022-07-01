@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+            
+        var continua = verdadeiro;
+        var acumulador = 0;
+
+        while(continua){
+
+            for (seja i = 0; i < 2; i++) {
+                var nota = parseInt(prompt("Digite um numero:"));
+                acumulador += nota;          
+            }
+            var media = acumulador / 2;
+            alert("A sua media é: " + media);
+
+            var op = prompt("Deseja continuar S/N ?").toUpperCase();
+            if(op == "N") {
+                continua = falso;
+            }
+        }
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+          var continua = verdadeiro;
+        var contador = 0;
+        var acumulador = 0;
+
+        while(continua){
+            var numeros = parseInt(prompt("Digite um numero"));
+            var op = prompt("Deseja continuar ? Digite S ou N").toUpperCase();
+            acumulador += numeros;
+
+            if(op == "N"){
+                continua = falso;
+            } else {
+                contador++;
+            }
+        }
+
+        var media = acumulador/contador;
+
+        alert("O total de numeros foi: " + contador);
+        alert("A mídia foi: " + mídia);
+    </script>
+
+    
+</head>
+<body>
+    
+</body>
+</html>
